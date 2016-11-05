@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 29 oct. 2016 16:40:13 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.company.projetlo54.entity.Client" table="client" catalog="bddlo54" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="courseSession" class="com.company.projetlo54.entity.CourseSession" fetch="select">
+            <column name="COURSE_SESSION_ID" not-null="true" />
+        </many-to-one>
+        <property name="lastname" type="string">
+            <column name="LASTNAME" length="32" not-null="true" />
+        </property>
+        <property name="firstname" type="string">
+            <column name="FIRSTNAME" length="32" not-null="true" />
+        </property>
+        <property name="address" type="string">
+            <column name="ADDRESS" length="32" not-null="true" />
+        </property>
+        <property name="phone" type="string">
+            <column name="PHONE" length="32" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="EMAIL" length="32" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
