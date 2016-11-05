@@ -9,6 +9,6 @@
     <mapping resource="com/company/projetlo54/entity/Client.hbm.xml"/>
     <mapping resource="com/company/projetlo54/entity/CourseSession.hbm.xml"/>
     <mapping resource="com/company/projetlo54/entity/Course.hbm.xml"/>
-    <mapping class ="com/company/projetlo54/entity/Location.hbm.xml"/>
+    <mapping ressource ="com/company/projetlo54/entity/Location.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>
